@@ -2,6 +2,14 @@
 
 {% block content%}
 
+<P>Hello, You are on {{page}} page</P>
+
+{% if number > 10 %}
+<p>The number is greater than 10</p>
+{% else %}
+<p>The nmbr is less than or equal to 10</p>
+{% endif %}
+
 <h1>projects template</h1>
 
 <p>
