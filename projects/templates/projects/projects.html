@@ -6,16 +6,21 @@
 
 {% if number > 10 %}
 <p>The number is greater than 10</p>
+
 {% else %}
 <p>The nmbr is less than or equal to 10</p>
 {% endif %}
 
-<h1>projects template</h1>
+<hr>
 
-<p>
-    lore iipksbcbsadvsan iofajs  sodfhsd isoisjdsak 
-    sadbasbasbjsbacjhbscjhbscjhbsdc
-    sdjbasdhbasd
-</p>
+<h1>Projects</h1>
+
+<ul>
+    {% for project in projects %}
+
+        <li>Title : {{project.title}} --- {{project.description}}</li>
+
+    {% endfor %}
+</ul>
 
 {% endblock content %}
